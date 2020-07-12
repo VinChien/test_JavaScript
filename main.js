@@ -58,3 +58,55 @@ console.log( test1 < test2);
 console.log( test1 >= test2);
 console.log( test1 >= test2+50);
 console.log( test1 >= test2+51);
+
+if (true) {
+    console.log("true");
+}
+
+var score = document.getElementById("score");
+var result = document.getElementById("result");
+
+score.onchange = () => {
+
+    var s = parseInt(score.value);
+
+    if (s >= 60) {
+        result.innerText = "分數為: " + s + " -> 及格"; 
+    } else if (s < 60) {
+        result.innerText = "分數為: " + s + " -> 補考";
+    }
+}
+
+
+var drink =["冰美式","摩卡","卡布奇諾"];
+
+for (let i = 0; i < drink.length; i++) {
+    console.log(drink[i]);
+}
+
+var dk = document.getElementsByClassName("item");
+
+console.log(dk);
+
+for (let i = 0; i < dk.length; i++) {
+
+    dk[i].innerText = drink[i];
+    
+}
+
+var countA = 99;
+
+{
+    var countA = 77;
+}
+
+console.log(countA);
+
+
+let countB = 100;
+
+{
+    let countB = 1010; 
+}
+
+console.log(countB);
